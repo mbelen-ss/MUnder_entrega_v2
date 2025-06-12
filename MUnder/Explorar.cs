@@ -1,0 +1,49 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace MUnder
+{
+    public partial class Explorar : Form
+    {
+        public Explorar()
+        {
+            InitializeComponent();
+        }
+
+        private void flowLayoutPanel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+          //  PantallaPrincipal PantallaPrincipalForm = new PantallaPrincipal();
+          //  PantallaPrincipalForm.Show();
+        }
+
+        private void btnPlayList_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+         //   var playListForm = new PlayList();
+         //   playListForm.ShowDialog();
+        }
+    }
+}
