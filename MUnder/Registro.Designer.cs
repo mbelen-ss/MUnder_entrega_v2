@@ -48,7 +48,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.Indigo;
+            label1.ForeColor = Color.DarkOrchid;
             label1.Location = new Point(234, 41);
             label1.Name = "label1";
             label1.Size = new Size(199, 37);

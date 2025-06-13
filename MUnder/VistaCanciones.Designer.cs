@@ -68,7 +68,6 @@
             // btnPerfil
             // 
             btnPerfil.BackColor = Color.Indigo;
-            btnPerfil.Cursor = Cursors.Hand;
             btnPerfil.FlatStyle = FlatStyle.Popup;
             btnPerfil.Font = new Font("Segoe UI Semilight", 12F);
             btnPerfil.ForeColor = SystemColors.ButtonHighlight;
@@ -82,7 +81,6 @@
             // btnMusica
             // 
             btnMusica.BackColor = Color.Indigo;
-            btnMusica.Cursor = Cursors.Hand;
             btnMusica.FlatStyle = FlatStyle.Popup;
             btnMusica.Font = new Font("Segoe UI Semilight", 12F);
             btnMusica.ForeColor = SystemColors.ButtonHighlight;
@@ -111,7 +109,6 @@
             // btnSocial
             // 
             btnSocial.BackColor = Color.Indigo;
-            btnSocial.Cursor = Cursors.Hand;
             btnSocial.FlatStyle = FlatStyle.Popup;
             btnSocial.Font = new Font("Segoe UI Semilight", 12F);
             btnSocial.ForeColor = SystemColors.ButtonHighlight;
@@ -125,7 +122,6 @@
             // btnMensaje
             // 
             btnMensaje.BackColor = Color.Indigo;
-            btnMensaje.Cursor = Cursors.Hand;
             btnMensaje.FlatStyle = FlatStyle.Popup;
             btnMensaje.Font = new Font("Segoe UI Semilight", 12F);
             btnMensaje.ForeColor = SystemColors.ButtonHighlight;

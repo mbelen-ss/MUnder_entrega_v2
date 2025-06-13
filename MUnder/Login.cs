@@ -64,6 +64,7 @@ namespace MUnder
 
         private void Login_Load(object sender, EventArgs e)
         {
+            this.BackColor = ColorTranslator.FromHtml("#1E1B26");
 
         }
     }

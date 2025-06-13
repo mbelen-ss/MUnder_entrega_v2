@@ -28,7 +28,7 @@ namespace MUnder
 
         private void PlayList_Load(object sender, EventArgs e)
         {
-
+            this.BackColor = ColorTranslator.FromHtml("#1E1B26");
         }
         //funcionalidad de los botones - Abrir Vistas de Canciones por Género
         private void AbrirVistaCanciones(string genero)
@@ -102,6 +102,21 @@ namespace MUnder
         }
 
         private void flowLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label17_Click_1(object sender, EventArgs e)
         {
 
         }

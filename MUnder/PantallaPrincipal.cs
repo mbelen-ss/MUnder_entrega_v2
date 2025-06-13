@@ -27,7 +27,7 @@ namespace MUnder
         }
         private void btnPlayList_Click(object sender, EventArgs e)
         {
-          //  this.Hide();
+            //  this.Hide();
             var playListForm = new PlayList(usuarioActual);
             playListForm.ShowDialog();
         }
@@ -70,6 +70,16 @@ namespace MUnder
         private void btnMensaje_Click(object sender, EventArgs e)
         {
             MessageBox.Show($"      Proximamente...      ", "Social");
+        }
+
+        private void btnPerfil_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show($"      Proximamente...      ", "Perfil");
+        }
+
+        private void PantallaPrincipal_Load(object sender, EventArgs e)
+        {
+            this.BackColor = ColorTranslator.FromHtml("#1E1B26");
         }
     }
 }

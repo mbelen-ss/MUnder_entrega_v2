@@ -35,15 +35,20 @@ namespace MUnder
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
-          //  PantallaPrincipal PantallaPrincipalForm = new PantallaPrincipal();
-          //  PantallaPrincipalForm.Show();
+            //  PantallaPrincipal PantallaPrincipalForm = new PantallaPrincipal();
+            //  PantallaPrincipalForm.Show();
         }
 
         private void btnPlayList_Click(object sender, EventArgs e)
         {
             this.Hide();
-         //   var playListForm = new PlayList();
-         //   playListForm.ShowDialog();
+            //   var playListForm = new PlayList();
+            //   playListForm.ShowDialog();
+        }
+
+        private void Explorar_Load(object sender, EventArgs e)
+        {
+            this.BackColor = ColorTranslator.FromHtml("#1E1B26");
         }
     }
 }

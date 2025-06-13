@@ -83,6 +83,7 @@
             btnPerfil.TabIndex = 0;
             btnPerfil.Text = "Perfil";
             btnPerfil.UseVisualStyleBackColor = false;
+            btnPerfil.Click += btnPerfil_Click;
             // 
             // flowLayoutPanel1
             // 
@@ -235,6 +236,7 @@
             Name = "PantallaPrincipal";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "PantallaPrincipal";
+            Load += PantallaPrincipal_Load;
             flowLayoutPanel1.ResumeLayout(false);
             flowLayoutPanel2.ResumeLayout(false);
             flowLayoutPanel2.PerformLayout();

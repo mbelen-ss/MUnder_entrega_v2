@@ -23,7 +23,7 @@ namespace MUnder
 
         private void VistaCanciones_Load(object sender, EventArgs e)
         {
-
+            this.BackColor = ColorTranslator.FromHtml("#1E1B26");
         }
 
         private void label1_Click(object sender, EventArgs e)
