@@ -50,9 +50,9 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = SystemColors.ButtonHighlight;
-            label1.Location = new Point(245, 142);
+            label1.Location = new Point(280, 189);
             label1.Name = "label1";
-            label1.Size = new Size(81, 21);
+            label1.Size = new Size(100, 28);
             label1.TabIndex = 0;
             label1.Text = "Nombre: ";
             // 
@@ -61,10 +61,11 @@
             txtNombrePlaylist.Cursor = Cursors.IBeam;
             txtNombrePlaylist.Font = new Font("Segoe UI", 12F);
             txtNombrePlaylist.ForeColor = SystemColors.WindowFrame;
-            txtNombrePlaylist.Location = new Point(245, 166);
+            txtNombrePlaylist.Location = new Point(280, 221);
+            txtNombrePlaylist.Margin = new Padding(3, 4, 3, 4);
             txtNombrePlaylist.Name = "txtNombrePlaylist";
             txtNombrePlaylist.PlaceholderText = "Nombre de tu playlist";
-            txtNombrePlaylist.Size = new Size(319, 29);
+            txtNombrePlaylist.Size = new Size(364, 34);
             txtNombrePlaylist.TabIndex = 1;
             // 
             // txtDescripcion
@@ -72,11 +73,12 @@
             txtDescripcion.Cursor = Cursors.IBeam;
             txtDescripcion.Font = new Font("Segoe UI", 12F);
             txtDescripcion.ForeColor = SystemColors.WindowFrame;
-            txtDescripcion.Location = new Point(245, 235);
+            txtDescripcion.Location = new Point(280, 313);
+            txtDescripcion.Margin = new Padding(3, 4, 3, 4);
             txtDescripcion.Multiline = true;
             txtDescripcion.Name = "txtDescripcion";
             txtDescripcion.PlaceholderText = "Describe tu playlist...";
-            txtDescripcion.Size = new Size(319, 82);
+            txtDescripcion.Size = new Size(364, 108);
             txtDescripcion.TabIndex = 3;
             txtDescripcion.TextChanged += txtDescripcion_TextChanged;
             // 
@@ -85,9 +87,9 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = SystemColors.ButtonHighlight;
-            label2.Location = new Point(245, 208);
+            label2.Location = new Point(280, 277);
             label2.Name = "label2";
-            label2.Size = new Size(108, 21);
+            label2.Size = new Size(134, 28);
             label2.TabIndex = 2;
             label2.Text = "Descripción: ";
             // 
@@ -98,9 +100,10 @@
             btnCrear.FlatStyle = FlatStyle.Popup;
             btnCrear.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnCrear.ForeColor = Color.White;
-            btnCrear.Location = new Point(271, 335);
+            btnCrear.Location = new Point(310, 447);
+            btnCrear.Margin = new Padding(3, 4, 3, 4);
             btnCrear.Name = "btnCrear";
-            btnCrear.Size = new Size(95, 34);
+            btnCrear.Size = new Size(109, 45);
             btnCrear.TabIndex = 4;
             btnCrear.Text = "Crear";
             btnCrear.UseVisualStyleBackColor = false;
@@ -112,9 +115,10 @@
             btnCancelar.Cursor = Cursors.Hand;
             btnCancelar.FlatStyle = FlatStyle.Popup;
             btnCancelar.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnCancelar.Location = new Point(422, 335);
+            btnCancelar.Location = new Point(482, 447);
+            btnCancelar.Margin = new Padding(3, 4, 3, 4);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(91, 34);
+            btnCancelar.Size = new Size(104, 45);
             btnCancelar.TabIndex = 5;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = false;
@@ -124,9 +128,9 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.ForeColor = SystemColors.ButtonHighlight;
-            label3.Location = new Point(294, 94);
+            label3.Location = new Point(336, 125);
             label3.Name = "label3";
-            label3.Size = new Size(206, 37);
+            label3.Size = new Size(252, 46);
             label3.TabIndex = 6;
             label3.Text = "Nueva PlayList";
             label3.Click += label3_Click;
@@ -140,8 +144,9 @@
             flowLayoutPanel1.Controls.Add(btnMensaje);
             flowLayoutPanel1.Controls.Add(btnSalir);
             flowLayoutPanel1.Location = new Point(-1, 0);
+            flowLayoutPanel1.Margin = new Padding(3, 4, 3, 4);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(802, 54);
+            flowLayoutPanel1.Size = new Size(917, 72);
             flowLayoutPanel1.TabIndex = 15;
             // 
             // btnPerfil
@@ -151,12 +156,14 @@
             btnPerfil.FlatStyle = FlatStyle.Popup;
             btnPerfil.Font = new Font("Segoe UI Semilight", 12F);
             btnPerfil.ForeColor = SystemColors.ButtonHighlight;
-            btnPerfil.Location = new Point(3, 3);
+            btnPerfil.Location = new Point(3, 4);
+            btnPerfil.Margin = new Padding(3, 4, 3, 4);
             btnPerfil.Name = "btnPerfil";
-            btnPerfil.Size = new Size(128, 50);
+            btnPerfil.Size = new Size(146, 67);
             btnPerfil.TabIndex = 0;
             btnPerfil.Text = "Perfil";
             btnPerfil.UseVisualStyleBackColor = false;
+            btnPerfil.Click += btnPerfil_Click;
             // 
             // btnMusica
             // 
@@ -165,9 +172,10 @@
             btnMusica.FlatStyle = FlatStyle.Popup;
             btnMusica.Font = new Font("Segoe UI Semilight", 12F);
             btnMusica.ForeColor = SystemColors.ButtonHighlight;
-            btnMusica.Location = new Point(137, 3);
+            btnMusica.Location = new Point(155, 4);
+            btnMusica.Margin = new Padding(3, 4, 3, 4);
             btnMusica.Name = "btnMusica";
-            btnMusica.Size = new Size(128, 50);
+            btnMusica.Size = new Size(146, 67);
             btnMusica.TabIndex = 1;
             btnMusica.Text = "Música";
             btnMusica.UseVisualStyleBackColor = false;
@@ -180,9 +188,10 @@
             btnPlayList.FlatStyle = FlatStyle.Popup;
             btnPlayList.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
             btnPlayList.ForeColor = SystemColors.ButtonHighlight;
-            btnPlayList.Location = new Point(271, 3);
+            btnPlayList.Location = new Point(307, 4);
+            btnPlayList.Margin = new Padding(3, 4, 3, 4);
             btnPlayList.Name = "btnPlayList";
-            btnPlayList.Size = new Size(128, 50);
+            btnPlayList.Size = new Size(146, 67);
             btnPlayList.TabIndex = 2;
             btnPlayList.Text = "PlayList";
             btnPlayList.UseVisualStyleBackColor = false;
@@ -194,12 +203,14 @@
             btnSocial.FlatStyle = FlatStyle.Popup;
             btnSocial.Font = new Font("Segoe UI Semilight", 12F);
             btnSocial.ForeColor = SystemColors.ButtonHighlight;
-            btnSocial.Location = new Point(405, 3);
+            btnSocial.Location = new Point(459, 4);
+            btnSocial.Margin = new Padding(3, 4, 3, 4);
             btnSocial.Name = "btnSocial";
-            btnSocial.Size = new Size(128, 50);
+            btnSocial.Size = new Size(146, 67);
             btnSocial.TabIndex = 3;
             btnSocial.Text = "Social";
             btnSocial.UseVisualStyleBackColor = false;
+            btnSocial.Click += btnSocial_Click;
             // 
             // btnMensaje
             // 
@@ -208,9 +219,10 @@
             btnMensaje.FlatStyle = FlatStyle.Popup;
             btnMensaje.Font = new Font("Segoe UI Semilight", 12F);
             btnMensaje.ForeColor = SystemColors.ButtonHighlight;
-            btnMensaje.Location = new Point(539, 3);
+            btnMensaje.Location = new Point(611, 4);
+            btnMensaje.Margin = new Padding(3, 4, 3, 4);
             btnMensaje.Name = "btnMensaje";
-            btnMensaje.Size = new Size(127, 50);
+            btnMensaje.Size = new Size(145, 67);
             btnMensaje.TabIndex = 4;
             btnMensaje.Text = "Mensaje";
             btnMensaje.UseVisualStyleBackColor = false;
@@ -222,9 +234,10 @@
             btnSalir.FlatStyle = FlatStyle.Popup;
             btnSalir.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
             btnSalir.ForeColor = SystemColors.ButtonHighlight;
-            btnSalir.Location = new Point(672, 3);
+            btnSalir.Location = new Point(762, 4);
+            btnSalir.Margin = new Padding(3, 4, 3, 4);
             btnSalir.Name = "btnSalir";
-            btnSalir.Size = new Size(127, 50);
+            btnSalir.Size = new Size(145, 67);
             btnSalir.TabIndex = 5;
             btnSalir.Text = "Atras";
             btnSalir.UseMnemonic = false;
@@ -233,10 +246,10 @@
             // 
             // NuevaPlaylist
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
             Controls.Add(flowLayoutPanel1);
             Controls.Add(label3);
             Controls.Add(btnCancelar);
@@ -245,6 +258,7 @@
             Controls.Add(label2);
             Controls.Add(txtNombrePlaylist);
             Controls.Add(label1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "NuevaPlaylist";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "NuevaPlaylist";

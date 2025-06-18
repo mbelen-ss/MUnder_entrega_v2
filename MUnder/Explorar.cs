@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MUnder.Entidades;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,12 @@ namespace MUnder
 {
     public partial class Explorar : Form
     {
-        public Explorar()
+        private Usuario usuarioActual;
+
+        public Explorar(Usuario usuario)
         {
             InitializeComponent();
+            usuarioActual = usuario;
         }
 
         private void flowLayoutPanel3_Paint(object sender, PaintEventArgs e)
@@ -49,6 +53,17 @@ namespace MUnder
         private void Explorar_Load(object sender, EventArgs e)
         {
             this.BackColor = ColorTranslator.FromHtml("#1E1B26");
+            btnPerfil.Text = $"{usuarioActual.Nombre}";
+        }
+
+        private void btnMensaje_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSocial_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

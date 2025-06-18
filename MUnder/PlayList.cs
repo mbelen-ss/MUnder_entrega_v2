@@ -29,6 +29,7 @@ namespace MUnder
         private void PlayList_Load(object sender, EventArgs e)
         {
             this.BackColor = ColorTranslator.FromHtml("#1E1B26");
+            btnPerfil.Text = $"{usuarioActual.Nombre}";
         }
         //funcionalidad de los botones - Abrir Vistas de Canciones por Género
         private void AbrirVistaCanciones(string genero)
@@ -51,9 +52,7 @@ namespace MUnder
 
         private void btnMusica_Click(object sender, EventArgs e)
         {
-            Explorar ExplorarForm = new Explorar();
-            ExplorarForm.Show();
-            this.Close();
+            MessageBox.Show($"      Debe ir a la pantalla princical para acceder      ", "Musica");
         }
 
         private void btnIndieFolkArg_Click_1(object sender, EventArgs e)
@@ -119,6 +118,16 @@ namespace MUnder
         private void label17_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnPerfil_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show($"      Proximamente...      ", "Mensajes");
+        }
+
+        private void btnSocial_Click_1(object sender, EventArgs e)
+        {
+            MessageBox.Show($"      Proximamente...      ", "Social");
         }
     }
 }

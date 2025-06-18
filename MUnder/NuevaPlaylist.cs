@@ -39,6 +39,8 @@ namespace MUnder
         private void NuevaPlaylist_Load(object sender, EventArgs e)
         {
             this.BackColor = ColorTranslator.FromHtml("#1E1B26");
+            btnPerfil.Text = $"{usuarioActual.Nombre}";
+
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -50,9 +52,8 @@ namespace MUnder
 
         private void btnMusica_Click(object sender, EventArgs e)
         {
-            Explorar ExplorarForm = new Explorar();
-            ExplorarForm.Show();
-            this.Close();
+            MessageBox.Show($"      Debe ir a la pantalla princical para acceder      ", "Musica");
+
         }
 
         private void btnCrear_Click(object sender, EventArgs e)
@@ -89,6 +90,17 @@ namespace MUnder
                     MessageBox.Show($"Error: {ex.Message}");
                 }
             }
+        }
+
+        private void btnPerfil_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show($"      Proximamente...      ", "Perfil");
+
+        }
+
+        private void btnSocial_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show($"      Proximamente...      ", "Social");
         }
     }
 }

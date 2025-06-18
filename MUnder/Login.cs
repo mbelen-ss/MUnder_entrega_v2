@@ -67,5 +67,10 @@ namespace MUnder
             this.BackColor = ColorTranslator.FromHtml("#1E1B26");
 
         }
+
+        private void txtUsuario_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

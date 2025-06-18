@@ -66,5 +66,10 @@ namespace MUnder
         {
             this.BackColor = ColorTranslator.FromHtml("#1E1B26");
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

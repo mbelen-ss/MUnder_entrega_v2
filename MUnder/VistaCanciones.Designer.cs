@@ -46,10 +46,12 @@
             ListaCanciones.AllowUserToResizeColumns = false;
             ListaCanciones.BackgroundColor = Color.DimGray;
             ListaCanciones.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            ListaCanciones.Location = new Point(61, 128);
+            ListaCanciones.Location = new Point(70, 171);
+            ListaCanciones.Margin = new Padding(3, 4, 3, 4);
             ListaCanciones.Name = "ListaCanciones";
+            ListaCanciones.RowHeadersWidth = 51;
             ListaCanciones.ScrollBars = ScrollBars.Vertical;
-            ListaCanciones.Size = new Size(668, 256);
+            ListaCanciones.Size = new Size(763, 341);
             ListaCanciones.TabIndex = 0;
             // 
             // flowLayoutPanel1
@@ -61,8 +63,9 @@
             flowLayoutPanel1.Controls.Add(btnMensaje);
             flowLayoutPanel1.Controls.Add(btnSalir);
             flowLayoutPanel1.Location = new Point(-1, 0);
+            flowLayoutPanel1.Margin = new Padding(3, 4, 3, 4);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(802, 54);
+            flowLayoutPanel1.Size = new Size(917, 72);
             flowLayoutPanel1.TabIndex = 14;
             // 
             // btnPerfil
@@ -71,12 +74,14 @@
             btnPerfil.FlatStyle = FlatStyle.Popup;
             btnPerfil.Font = new Font("Segoe UI Semilight", 12F);
             btnPerfil.ForeColor = SystemColors.ButtonHighlight;
-            btnPerfil.Location = new Point(3, 3);
+            btnPerfil.Location = new Point(3, 4);
+            btnPerfil.Margin = new Padding(3, 4, 3, 4);
             btnPerfil.Name = "btnPerfil";
-            btnPerfil.Size = new Size(128, 50);
+            btnPerfil.Size = new Size(146, 67);
             btnPerfil.TabIndex = 0;
             btnPerfil.Text = "Perfil";
             btnPerfil.UseVisualStyleBackColor = false;
+            btnPerfil.Click += btnPerfil_Click;
             // 
             // btnMusica
             // 
@@ -84,9 +89,10 @@
             btnMusica.FlatStyle = FlatStyle.Popup;
             btnMusica.Font = new Font("Segoe UI Semilight", 12F);
             btnMusica.ForeColor = SystemColors.ButtonHighlight;
-            btnMusica.Location = new Point(137, 3);
+            btnMusica.Location = new Point(155, 4);
+            btnMusica.Margin = new Padding(3, 4, 3, 4);
             btnMusica.Name = "btnMusica";
-            btnMusica.Size = new Size(128, 50);
+            btnMusica.Size = new Size(146, 67);
             btnMusica.TabIndex = 1;
             btnMusica.Text = "Música";
             btnMusica.UseVisualStyleBackColor = false;
@@ -99,9 +105,10 @@
             btnPlayList.FlatStyle = FlatStyle.Popup;
             btnPlayList.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
             btnPlayList.ForeColor = SystemColors.ButtonHighlight;
-            btnPlayList.Location = new Point(271, 3);
+            btnPlayList.Location = new Point(307, 4);
+            btnPlayList.Margin = new Padding(3, 4, 3, 4);
             btnPlayList.Name = "btnPlayList";
-            btnPlayList.Size = new Size(128, 50);
+            btnPlayList.Size = new Size(146, 67);
             btnPlayList.TabIndex = 2;
             btnPlayList.Text = "PlayList";
             btnPlayList.UseVisualStyleBackColor = false;
@@ -112,9 +119,10 @@
             btnSocial.FlatStyle = FlatStyle.Popup;
             btnSocial.Font = new Font("Segoe UI Semilight", 12F);
             btnSocial.ForeColor = SystemColors.ButtonHighlight;
-            btnSocial.Location = new Point(405, 3);
+            btnSocial.Location = new Point(459, 4);
+            btnSocial.Margin = new Padding(3, 4, 3, 4);
             btnSocial.Name = "btnSocial";
-            btnSocial.Size = new Size(128, 50);
+            btnSocial.Size = new Size(146, 67);
             btnSocial.TabIndex = 3;
             btnSocial.Text = "Social";
             btnSocial.UseVisualStyleBackColor = false;
@@ -125,11 +133,12 @@
             btnMensaje.FlatStyle = FlatStyle.Popup;
             btnMensaje.Font = new Font("Segoe UI Semilight", 12F);
             btnMensaje.ForeColor = SystemColors.ButtonHighlight;
-            btnMensaje.Location = new Point(539, 3);
+            btnMensaje.Location = new Point(611, 4);
+            btnMensaje.Margin = new Padding(3, 4, 3, 4);
             btnMensaje.Name = "btnMensaje";
-            btnMensaje.Size = new Size(127, 50);
+            btnMensaje.Size = new Size(145, 67);
             btnMensaje.TabIndex = 4;
-            btnMensaje.Text = "Mensaje";
+            btnMensaje.Text = "Canciones";
             btnMensaje.UseVisualStyleBackColor = false;
             // 
             // btnSalir
@@ -139,9 +148,10 @@
             btnSalir.FlatStyle = FlatStyle.Popup;
             btnSalir.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
             btnSalir.ForeColor = SystemColors.ButtonHighlight;
-            btnSalir.Location = new Point(672, 3);
+            btnSalir.Location = new Point(762, 4);
+            btnSalir.Margin = new Padding(3, 4, 3, 4);
             btnSalir.Name = "btnSalir";
-            btnSalir.Size = new Size(127, 50);
+            btnSalir.Size = new Size(145, 67);
             btnSalir.TabIndex = 5;
             btnSalir.Text = "Atras";
             btnSalir.UseMnemonic = false;
@@ -153,22 +163,23 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 18.25F, FontStyle.Bold);
             label1.ForeColor = SystemColors.ButtonHighlight;
-            label1.Location = new Point(61, 80);
+            label1.Location = new Point(70, 107);
             label1.Name = "label1";
-            label1.Size = new Size(319, 35);
+            label1.Size = new Size(396, 42);
             label1.TabIndex = 15;
             label1.Text = "Guardados recientemente";
             label1.Click += label1_Click;
             // 
             // VistaCanciones
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
             Controls.Add(label1);
             Controls.Add(flowLayoutPanel1);
             Controls.Add(ListaCanciones);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "VistaCanciones";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "VistaCanciones";
