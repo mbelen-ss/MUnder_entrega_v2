@@ -29,7 +29,7 @@ namespace MUnder
         private void PlayList_Load(object sender, EventArgs e)
         {
             this.BackColor = ColorTranslator.FromHtml("#1E1B26");
-            btnPerfil.Text = $"{usuarioActual.Nombre}";
+            txtPerfil.Text = $"{usuarioActual.Nombre}, estas son tus PlayList";
         }
         //funcionalidad de los botones - Abrir Vistas de Canciones por Género
         private void AbrirVistaCanciones(string genero)
@@ -37,7 +37,7 @@ namespace MUnder
             var servicio = new CancionService();
             var canciones = servicio.ObtenerPorGenero(genero);
 
-            var vista = new VistaCanciones(canciones);
+            var vista = new VistaCanciones(canciones, usuarioActual);
             vista.ShowDialog();
         }
         private void btnRockAlter2024_Click(object sender, EventArgs e)
@@ -128,6 +128,11 @@ namespace MUnder
         private void btnSocial_Click_1(object sender, EventArgs e)
         {
             MessageBox.Show($"      Proximamente...      ", "Social");
+        }
+
+        private void txtPerfil_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

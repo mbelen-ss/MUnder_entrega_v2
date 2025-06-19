@@ -13,22 +13,22 @@ namespace MUnder
 {
     public partial class VistaCanciones : Form
     {
-        //private Usuario usuarioActual;
+        private Usuario usuarioActual;
 
-        public VistaCanciones(List<Cancion> canciones)
+        public VistaCanciones(List<Cancion> canciones,Usuario usuario)
         {
             InitializeComponent();
 
             ListaCanciones.DataSource = canciones;
             ListaCanciones.AutoGenerateColumns = true;
-            //usuarioActual = usuario;
+            usuarioActual = usuario;
 
         }
 
         private void VistaCanciones_Load(object sender, EventArgs e)
         {
             this.BackColor = ColorTranslator.FromHtml("#1E1B26");
-            //btnPerfil.Text = $"{usuarioActual.Nombre}";
+            txtPerfil.Text = $"{usuarioActual.Nombre}, estas son tus canciones";
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -41,16 +41,6 @@ namespace MUnder
             //   PlayList playListForm = new PlayList();
             // playListForm.Show();
             this.Close();
-        }
-
-        private void btnMusica_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show($"      Debe ir a la pantalla princical para acceder      ", "Musica");
-        }
-
-        private void btnPerfil_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

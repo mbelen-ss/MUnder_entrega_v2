@@ -33,12 +33,6 @@
             label4 = new Label();
             btnRockAlter2024 = new Button();
             label2 = new Label();
-            flowLayoutPanel1 = new FlowLayoutPanel();
-            btnPerfil = new Button();
-            btnMusica = new Button();
-            btnPlayList = new Button();
-            btnSocial = new Button();
-            btnMensaje = new Button();
             btnSalir = new Button();
             label1 = new Label();
             flowLayoutPanel3 = new FlowLayoutPanel();
@@ -58,8 +52,8 @@
             label15 = new Label();
             btnCreaPlayList = new Button();
             groupBox1 = new GroupBox();
+            txtPerfil = new Label();
             flowLayoutPanel2.SuspendLayout();
-            flowLayoutPanel1.SuspendLayout();
             flowLayoutPanel3.SuspendLayout();
             flowLayoutPanel4.SuspendLayout();
             flowLayoutPanel5.SuspendLayout();
@@ -129,95 +123,6 @@
             label2.TextAlign = ContentAlignment.TopRight;
             label2.Click += label2_Click;
             // 
-            // flowLayoutPanel1
-            // 
-            flowLayoutPanel1.BackColor = Color.Transparent;
-            flowLayoutPanel1.Controls.Add(btnPerfil);
-            flowLayoutPanel1.Controls.Add(btnMusica);
-            flowLayoutPanel1.Controls.Add(btnPlayList);
-            flowLayoutPanel1.Controls.Add(btnSocial);
-            flowLayoutPanel1.Controls.Add(btnMensaje);
-            flowLayoutPanel1.Controls.Add(btnSalir);
-            flowLayoutPanel1.Location = new Point(-1, 0);
-            flowLayoutPanel1.Margin = new Padding(3, 4, 3, 4);
-            flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(917, 72);
-            flowLayoutPanel1.TabIndex = 6;
-            // 
-            // btnPerfil
-            // 
-            btnPerfil.BackColor = Color.Indigo;
-            btnPerfil.FlatStyle = FlatStyle.Popup;
-            btnPerfil.Font = new Font("Segoe UI Semilight", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnPerfil.ForeColor = SystemColors.ButtonHighlight;
-            btnPerfil.Location = new Point(3, 4);
-            btnPerfil.Margin = new Padding(3, 4, 3, 4);
-            btnPerfil.Name = "btnPerfil";
-            btnPerfil.Size = new Size(146, 67);
-            btnPerfil.TabIndex = 0;
-            btnPerfil.Text = "Perfil";
-            btnPerfil.UseVisualStyleBackColor = false;
-            btnPerfil.Click += btnPerfil_Click;
-            // 
-            // btnMusica
-            // 
-            btnMusica.BackColor = Color.Indigo;
-            btnMusica.FlatStyle = FlatStyle.Popup;
-            btnMusica.Font = new Font("Segoe UI Semilight", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnMusica.ForeColor = SystemColors.ButtonHighlight;
-            btnMusica.Location = new Point(155, 4);
-            btnMusica.Margin = new Padding(3, 4, 3, 4);
-            btnMusica.Name = "btnMusica";
-            btnMusica.Size = new Size(146, 67);
-            btnMusica.TabIndex = 1;
-            btnMusica.Text = "Música";
-            btnMusica.UseVisualStyleBackColor = false;
-            btnMusica.Click += btnMusica_Click;
-            // 
-            // btnPlayList
-            // 
-            btnPlayList.BackColor = Color.DarkOrchid;
-            btnPlayList.Cursor = Cursors.Hand;
-            btnPlayList.FlatStyle = FlatStyle.Popup;
-            btnPlayList.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
-            btnPlayList.ForeColor = SystemColors.ButtonHighlight;
-            btnPlayList.Location = new Point(307, 4);
-            btnPlayList.Margin = new Padding(3, 4, 3, 4);
-            btnPlayList.Name = "btnPlayList";
-            btnPlayList.Size = new Size(146, 67);
-            btnPlayList.TabIndex = 2;
-            btnPlayList.Text = "PlayList";
-            btnPlayList.UseVisualStyleBackColor = false;
-            // 
-            // btnSocial
-            // 
-            btnSocial.BackColor = Color.Indigo;
-            btnSocial.FlatStyle = FlatStyle.Popup;
-            btnSocial.Font = new Font("Segoe UI Semilight", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnSocial.ForeColor = SystemColors.ButtonHighlight;
-            btnSocial.Location = new Point(459, 4);
-            btnSocial.Margin = new Padding(3, 4, 3, 4);
-            btnSocial.Name = "btnSocial";
-            btnSocial.Size = new Size(146, 67);
-            btnSocial.TabIndex = 3;
-            btnSocial.Text = "Social";
-            btnSocial.UseVisualStyleBackColor = false;
-            btnSocial.Click += btnSocial_Click_1;
-            // 
-            // btnMensaje
-            // 
-            btnMensaje.BackColor = Color.Indigo;
-            btnMensaje.FlatStyle = FlatStyle.Popup;
-            btnMensaje.Font = new Font("Segoe UI Semilight", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnMensaje.ForeColor = SystemColors.ButtonHighlight;
-            btnMensaje.Location = new Point(611, 4);
-            btnMensaje.Margin = new Padding(3, 4, 3, 4);
-            btnMensaje.Name = "btnMensaje";
-            btnMensaje.Size = new Size(145, 67);
-            btnMensaje.TabIndex = 4;
-            btnMensaje.Text = "Canciones";
-            btnMensaje.UseVisualStyleBackColor = false;
-            // 
             // btnSalir
             // 
             btnSalir.BackColor = Color.Indigo;
@@ -225,7 +130,7 @@
             btnSalir.FlatStyle = FlatStyle.Popup;
             btnSalir.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnSalir.ForeColor = SystemColors.ButtonHighlight;
-            btnSalir.Location = new Point(762, 4);
+            btnSalir.Location = new Point(757, 13);
             btnSalir.Margin = new Padding(3, 4, 3, 4);
             btnSalir.Name = "btnSalir";
             btnSalir.Size = new Size(145, 67);
@@ -450,16 +355,29 @@
             groupBox1.TabStop = false;
             groupBox1.Enter += groupBox1_Enter;
             // 
+            // txtPerfil
+            // 
+            txtPerfil.AutoSize = true;
+            txtPerfil.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
+            txtPerfil.ForeColor = SystemColors.ButtonHighlight;
+            txtPerfil.Location = new Point(82, 22);
+            txtPerfil.Name = "txtPerfil";
+            txtPerfil.Size = new Size(275, 35);
+            txtPerfil.TabIndex = 13;
+            txtPerfil.Text = ", estas son tus PlayList";
+            txtPerfil.Click += txtPerfil_Click;
+            // 
             // PlayList
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             ClientSize = new Size(914, 600);
+            Controls.Add(txtPerfil);
             Controls.Add(groupBox1);
             Controls.Add(btnCreaPlayList);
-            Controls.Add(flowLayoutPanel1);
             Controls.Add(label1);
+            Controls.Add(btnSalir);
             Margin = new Padding(3, 4, 3, 4);
             Name = "PlayList";
             StartPosition = FormStartPosition.CenterScreen;
@@ -467,7 +385,6 @@
             Load += PlayList_Load;
             flowLayoutPanel2.ResumeLayout(false);
             flowLayoutPanel2.PerformLayout();
-            flowLayoutPanel1.ResumeLayout(false);
             flowLayoutPanel3.ResumeLayout(false);
             flowLayoutPanel3.PerformLayout();
             flowLayoutPanel4.ResumeLayout(false);
@@ -485,12 +402,6 @@
         private Label label3;
         private Label label4;
         private Label label2;
-        private FlowLayoutPanel flowLayoutPanel1;
-        private Button btnPerfil;
-        private Button btnMusica;
-        private Button btnPlayList;
-        private Button btnSocial;
-        private Button btnMensaje;
         private Button btnSalir;
         private Label label1;
         private FlowLayoutPanel flowLayoutPanel3;
@@ -511,5 +422,6 @@
         private Button btnHipHopUnder;
         private Button btnCreaPlayList;
         private GroupBox groupBox1;
+        private Label txtPerfil;
     }
 }

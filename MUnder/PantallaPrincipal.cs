@@ -32,11 +32,6 @@ namespace MUnder
             playListForm.ShowDialog();
         }
 
-        private void btnSocial_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show($"      Proximamente...      ", "Mensajes");
-        }
-
         private void btnSalir_Click(object sender, EventArgs e)
         {
             Login loginForm = new Login();
@@ -59,7 +54,7 @@ namespace MUnder
             Explorar ExplorarForm = new Explorar(usuarioActual);
             ExplorarForm.ShowDialog();
             //this.Close();
-            this.Hide();
+            //this.Hide();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -81,8 +76,6 @@ namespace MUnder
         {
             this.BackColor = ColorTranslator.FromHtml("#1E1B26");
             txtBienvenida.Text = $"¡Bienvenido, {usuarioActual.Nombre}!";
-            btnPerfil.Text = $"{usuarioActual.Nombre}";
-
         }
     }
 }

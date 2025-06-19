@@ -53,7 +53,7 @@ namespace MUnder
         private void Explorar_Load(object sender, EventArgs e)
         {
             this.BackColor = ColorTranslator.FromHtml("#1E1B26");
-            btnPerfil.Text = $"{usuarioActual.Nombre}";
+            txtPerfil.Text = $"{usuarioActual.Nombre}, elegí tu vibra musical";
         }
 
         private void btnMensaje_Click(object sender, EventArgs e)
@@ -62,6 +62,21 @@ namespace MUnder
         }
 
         private void btnSocial_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPerfil_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

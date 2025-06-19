@@ -39,7 +39,7 @@ namespace MUnder
         private void NuevaPlaylist_Load(object sender, EventArgs e)
         {
             this.BackColor = ColorTranslator.FromHtml("#1E1B26");
-            btnPerfil.Text = $"{usuarioActual.Nombre}";
+            txtPerfil.Text = $"{usuarioActual.Nombre}, creemos una nueva playlist";
 
         }
 
