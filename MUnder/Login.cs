@@ -29,7 +29,7 @@ namespace MUnder
                 SmtpClient cliente = new SmtpClient("smtp.gmail.com", 587);
                 cliente.EnableSsl = true;
                 cliente.Credentials = new NetworkCredential("munder.music@gmail.com", "hsfynuicfkhdkuef");
-                
+
 
                 cliente.Send(mensaje);
             }
@@ -112,6 +112,11 @@ namespace MUnder
         }
 
         private void txtUsuario_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }

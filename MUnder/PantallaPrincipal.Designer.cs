@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PantallaPrincipal));
             txtBienvenida = new Label();
             btnPerfil = new Button();
             flowLayoutPanel1 = new FlowLayoutPanel();
@@ -187,12 +188,14 @@
             // pictureBox1
             // 
             pictureBox1.BackColor = Color.Transparent;
-            pictureBox1.Location = new Point(258, 4);
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(246, 3);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(284, 236);
+            pictureBox1.Size = new Size(305, 240);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // PantallaPrincipal
             // 
